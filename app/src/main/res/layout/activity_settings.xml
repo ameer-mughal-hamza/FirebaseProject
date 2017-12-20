@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.firebase.ameerhamza.firebaseproject.SettingsActivity">
+
+    <ImageView
+        android:id="@+id/mProfileImage"
+        android:layout_width="280sp"
+        android:layout_height="280sp"
+        android:layout_gravity="center"
+        android:layout_margin="7sp"
+        android:padding="7sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="18sp"
+        android:paddingTop="30sp">
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="First name" />
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="Last name" />
+
+        <RelativeLayout
+            android:layout_width="340sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="13sp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/mSpinnerBlood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="340sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="13sp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/mSpinnerCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/mMobileNnumber"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10sp"
+            android:hint="Mobile No." />
+
+        <Button
+            android:id="@+id/mSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:width="200sp"
+            android:background="@drawable/buttonstyle"
+            android:text="Save"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/mProgressBar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:visibility="invisible" />
+</LinearLayout>
