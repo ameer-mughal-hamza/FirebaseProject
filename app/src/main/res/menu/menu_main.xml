@@ -14,4 +14,9 @@
         android:title="Account Setting"
         />
 
+    <item
+        android:id="@+id/optionChat"
+        android:title="@string/chat"
+        />
+
 </menu>

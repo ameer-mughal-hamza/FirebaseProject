@@ -91,7 +91,6 @@ public class AppActivity extends AppCompatActivity {
                 Intent intent = new Intent(AppActivity.this, SettingsActivity.class);
                 startActivity(intent);
                 return true;
-
             default:
                 return super.onOptionsItemSelected(item);
         }
