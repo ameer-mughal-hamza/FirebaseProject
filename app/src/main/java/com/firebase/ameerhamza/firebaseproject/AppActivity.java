@@ -10,7 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
 import android.widget.Toast;
-import com.pusher.pushnotifications.PushNotifications;
+
 import com.firebase.ameerhamza.firebaseproject.modals.User;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -91,6 +91,7 @@ public class AppActivity extends AppCompatActivity {
                 Intent intent = new Intent(AppActivity.this, SettingsActivity.class);
                 startActivity(intent);
                 return true;
+
             default:
                 return super.onOptionsItemSelected(item);
         }
